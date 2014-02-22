@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Event">
 <head>
     <meta charset="utf-8">
 
     <link rel="stylesheet" type="text/css" href="scss/gdw.css">
 
     <title>Game Dev Warsaw</title>
+
+    <!-- Google Plus markup-->
+    <meta itemprop="name" content="Game Dev Warsaw">
+    <meta itemprop="description" content="Game Dev Warsaw description"> <!-- TODO change to proper description -->
+    <meta itemprop="url" content="http://gamedevwarsaw.pl">
+    <!--<meta itemprop="image" content="image_url">--> <!-- TODO change to logo url -->
+    <!---->
 </head>
 <body>
 
@@ -16,7 +23,7 @@
 </div>
 <div class="row">
     <div class="small-12 columns">
-        <h2>Nowa inicjatywa dla twórców gier w Warszawie</h2>
+        <h2 itemprop="name">Nowa inicjatywa dla twórców gier w Warszawie</h2>
     </div>
 </div>
 
@@ -66,6 +73,33 @@
         <h6>Chcesz wiedzieć więcej?</h6>
     </div>
 </div>
+
+
+
+
+<!-- TODO add performer, startDate, location microdata on actual event page
+<div class="row" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+    <div class="small-3 columns">
+        <img src="img_url" itemprop="image"/>
+    </div>
+    <div class="small-9 columns">
+        <h6 itemprop="name">Imię i nazwisko</h6>
+        <span itemprop="description">Opis prelegenta</span>
+    </div>
+</div>
+
+<div class="row" itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+    <div class="small-12 columns">
+        <h6 itemprop="name">Nazwa miejscówki</h6>
+        <span itemprop="postalCode">kod pocztowy</span>
+        <span itemprop="addressLocality">Warszawa</span>
+        <span itemprop="streetAddress">adres miejscówki</span>
+    </div>
+</div>
+
+TODO check if this date format works
+<span itemprop="startDate">yyyy-MM-DD HH:mm:ss</span>
+-->
 
 </body>
 </html>
