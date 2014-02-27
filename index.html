@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="js/vendor/modernizr.js"></script>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" type="text/css" href="scss/gdw.css">
 
-    <title>Game Dev Warsaw</title>
+    <title>Game Dev Warsaw - seria spotkań twórców gier w Warszawie</title>
 </head>
 <body>
+
+<section id="header-spacer"></section>
 
 <header>
     <div class="row">
@@ -32,9 +36,9 @@
     <img class="floating-img keyboard" src="img/keyboard.svg" alt="game pad image"/>
 </header>
 
-<section class="content">
+<section id="content">
     <div class="row">
-        <div class="small-12 medium-9 columns">
+        <div class="content-column">
             <ul>
                 <li><strong>Co miesiąc</strong> spotkanie dotyczące game devu w nowym interesującym, przyjącym miejscu.
                 </li>
@@ -47,25 +51,47 @@
     </div>
 
     <div class="row">
-        <div class="small-12 columns">
+        <div class="content-column">
             <h5>Chcesz wiedzieć więcej?</h5>
         </div>
     </div>
-    <div class="row icons">
-        <div class="small-12 medium-3 columns text-center icon-wrapper">
-            <i class="foundicon-twitter"></i>
-        </div>
-        <div class="small-12 medium-3 columns text-center icon-wrapper">
-            <i class="foundicon-facebook"></i>
-        </div>
-        <div class="small-12 medium-3 columns text-center icon-wrapper">
-            <i class="foundicon-google-plus"></i>
-        </div>
-        <div class="small-12 medium-3 columns text-center icon-wrapper">
-            <i class="foundicon-rss"></i>
+
+    <div class="row">
+        <div class="content-column">
+            <p>Sprawdź nasze konta na serwisach społecznościowych:</p>
         </div>
     </div>
+
+    <div class="row">
+        <div class="social-button-column">
+            <a href="https://twitter.com/" class="button"><i class="foundicon-twitter"></i></a>
+        </div>
+        <div class="social-button-column">
+            <a href="https://www.facebook.com/" class="button"><i class="foundicon-facebook"></i></a>
+        </div>
+        <div class="social-button-column">
+            <a href="https://plus.google.com/‎" class="button"><i class="foundicon-google-plus"></i></a>
+        </div>
+        <div class="social-button-column">
+            <a href="http://pl.wikipedia.org/wiki/RSS" class="button"><i class="foundicon-rss"></i></a>
+        </div>
+    </div>
+
 </section>
+
+<footer>
+    <div class="row">
+
+    </div>
+</footer>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/fastclick.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 $gdw-orange: #e15a3a;
-$gdw-dark-orange: #990000;
+$gdw-dark-orange: darken($gdw-orange, 30%);
 $gdw-gray: #756f6d;
 
 @import "normalize";
@@ -10,10 +10,23 @@ $gdw-gray: #756f6d;
 @import "social-icons/social_foundicons";
 @import url('http://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+.invisible-button {
+  @include button($button-med, $gdw-orange, false, false, false, false);
+}
+
+section#header-spacer {
+  background-color: white;
+  @media #{$small-only} {
+    padding-top: 1rem;
+  }
+  @media #{$medium-up} {
+    padding-top: 2rem;
+  }
+}
+
 header {
   position: relative;
   background-color: white;
-  padding-top: 2rem;
 
   .title {
     font-weight: 700;
@@ -24,7 +37,7 @@ header {
 
   .subtitle {
     font-weight: 300;
-    font-size: rem-calc(37);
+    font-size: rem-calc(28);
     color: $gdw-gray;
     line-height: 120%;
   }
@@ -44,8 +57,14 @@ header {
   }
 }
 
-section.content {
-  padding: 3rem 0 3rem 0;
+section#content {
+  padding-top: 2rem;
+
+  .content-column {
+    @extend .small-12;
+    @extend .medium-9;
+    @extend .columns;
+  }
 
   ul {
     margin-left: 0;
@@ -61,17 +80,25 @@ section.content {
     font-weight: 700;
   }
 
-  .icons {
-    padding: 3rem 0 3rem 0;
+  .social-button-column {
+    @extend .small-6;
+    @extend .medium-3;
+    @extend .columns;
 
-    .icon-wrapper {
-      @media #{$small-only} {
-        background-color: red;
-        width: 100%;
-      }
+    .button {
+      @extend .invisible-button;
+      @extend .radius;
+      @extend .expand;
+
       i {
-        font-size: 5rem;
+        font-size: 2rem;
       }
     }
+  }
+}
+
+footer {
+  @media #{$medium-up} {
+    padding-top: 2rem;
   }
 }
