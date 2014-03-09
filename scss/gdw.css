@@ -643,13 +643,13 @@ section#content .social-button-column {
   .small-3 {
     width: 25%; }
 
-  .small-4 {
+  .small-4, section#content .social-button-column {
     width: 33.33333%; }
 
   .small-5 {
     width: 41.66667%; }
 
-  .small-6, section#content .social-button-column {
+  .small-6 {
     width: 50%; }
 
   .small-7 {
@@ -853,10 +853,10 @@ section#content .social-button-column {
   .medium-2 {
     width: 16.66667%; }
 
-  .medium-3, section#content .social-button-column {
+  .medium-3 {
     width: 25%; }
 
-  .medium-4 {
+  .medium-4, section#content .social-button-column {
     width: 33.33333%; }
 
   .medium-5 {
