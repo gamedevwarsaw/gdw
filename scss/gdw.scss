@@ -14,45 +14,47 @@ $gdw-gray: #756f6d;
   @include button($button-med, $gdw-orange, false, false, false, false);
 }
 
-section#header-spacer {
-  background-color: white;
-  @media #{$small-only} {
-    padding-top: 1rem;
-  }
-  @media #{$medium-up} {
-    padding-top: 2rem;
-  }
-}
-
 header {
   position: relative;
   background-color: white;
 
-  .title {
-    font-weight: 700;
-    font-size: rem-calc(67);
-    color: $gdw-orange;
-    line-height: 120%;
-  }
-
-  .subtitle {
-    font-weight: 300;
-    font-size: rem-calc(28);
-    color: $gdw-gray;
-    line-height: 120%;
-  }
-
-  .floating-img {
-    display: none;
-    @media #{$large-up} {
-      display: block;
+  .logo {
+    @media #{$small-only} {
+      background-color: $gdw-orange;
+      text-align: center;
+      .for-medium-up {
+        display: none;
+      }
     }
-    position: absolute;
-    height: 100%;
-    bottom: 0;
+    @media #{$medium-up} {
+      background-color: white;
+      .for-small {
+        display: none;
+      }
+    }
+  }
 
-    &.keyboard {
-      right: 0;
+  .text {
+    @media #{$small-only} {
+      padding-top: rem-calc(28);
+      padding-bottom: rem-calc(28);
+    }
+    @media #{$medium-up} {
+      padding-top: rem-calc(21);
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: rem-calc(50);
+      color: $gdw-orange;
+      line-height: 120%;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      font-size: rem-calc(21);
+      color: $gdw-gray;
+      line-height: 120%;
     }
   }
 }
