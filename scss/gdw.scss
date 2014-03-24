@@ -43,18 +43,20 @@ header {
       padding-top: rem-calc(21);
     }
 
-    .title {
+    h1 {
       font-weight: 700;
       font-size: rem-calc(50);
       color: $gdw-orange;
       line-height: 120%;
+      margin: 0;
     }
 
-    .subtitle {
+    h2 {
       font-weight: 300;
       font-size: rem-calc(21);
       color: $gdw-gray;
       line-height: 120%;
+      margin: 0;
     }
   }
 }
