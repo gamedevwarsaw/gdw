@@ -76,6 +76,9 @@ section#content {
       list-style: none;
       line-height: 150%;
       padding-bottom: rem-calc($base-font-size);
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 
