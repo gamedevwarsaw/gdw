@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Event">
 <head>
     <script src="js/vendor/modernizr.js"></script>
 
@@ -16,17 +16,23 @@
     <meta name="twitter:site" content="@GameDevWarsaw">
     <meta name="twitter:title" content="Game Dev Warsaw">
     <meta name="twitter:description" content="Game Dev Warsaw - seria spotkań twórców gier w Warszawie">
-    <meta name="twitter:image" content="http://gamedevwarsaw.pl/img/logo-orange.png/game-dev-warsaw-logo-orange-512x512.png">
+    <meta name="twitter:image" content="http://gamedevwarsaw.pl/img/game-dev-warsaw-logo-orange-512x512.png">
     <!---->
 
     <!-- Facebook Open Graph Tags-->
-    <meta property="og:title" content="Game Dev Warsaw">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="http://gamedevwarsaw.pl/img/logo-orange.png/game-dev-warsaw-logo-orange-512x512.png">
-    <meta property="og:url" content="http://gamedevwarsaw.pl/">
-    <meta property="og:description" content="Game Dev Warsaw - seria spotkań twórców gier w Warszawie">
-    <meta property="og:site_name" content="Game Dev Warsaw">
-    <meta property="fb:admins" content="100000999789149,100000218095242">
+    <meta property="og:title" content="Game Dev Warsaw"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://gamedevwarsaw.pl/img/game-dev-warsaw-logo-orange-512x512.png"/>
+    <meta property="og:url" content="http://gamedevwarsaw.pl/index.html"/>
+    <meta property="og:description" content="Game Dev Warsaw - seria spotkań twórców gier w Warszawie"/>
+    <meta property="og:site_name" content="Game Dev Warsaw"/>
+    <!---->
+
+    <!-- Google Plus markup-->
+    <meta itemprop="name" content="Game Dev Warsaw">
+    <meta itemprop="description" content="Game Dev Warsaw - seria spotkań twórców gier w Warszawie">
+    <meta itemprop="url" content="http://gamedevwarsaw.pl">
+    <meta itemprop="image" content="http://gamedevwarsaw.pl/img/game-dev-warsaw-logo-orange-512x512.png">
     <!---->
 </head>
 <body>
@@ -40,12 +46,12 @@
         <div class="small-12 medium-9 columns text">
             <div class="row">
                 <div class="small-12 columns text-center">
-                    <span class="title">Game Dev Warsaw</span>
+                    <h1>Game Dev Warsaw</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="small-12 columns text-center">
-                    <span class="subtitle">Nowa inicjatywa dla twórców gier w Warszawie</span>
+                    <h2>Nowa inicjatywa dla twórców gier w Warszawie</h2>
                 </div>
             </div>
         </div>
@@ -62,14 +68,30 @@
     <div class="row">
         <div class="content-column">
             <ul>
-                <li><strong>Co miesiąc</strong> spotkanie dotyczące game devu w nowym miejscu.</li>
+                <li><strong>Comiesięczne</strong> spotkania dotyczące game devu.</li>
 
-                <li>Na każdym spotkaniu dwie <strong>różnorodne prelekcje</strong>.</li>
+                <li>Każdorazowo <strong>dwie różnorodne prelekcje</strong> w nowym miejscu.</li>
 
-                <li>Rozmowa, <strong>wymiana doświadczeń</strong> i możliwość poszerzenia swojej wiedzy.</li>
+                <li>Rozmowa, <strong>wymiana doświadczeń</strong>, możliwość poszerzenia swojej wiedzy.</li>
 
-                <li><strong>Networking</strong> po prelekcjach.</li>
+                <li><strong>Networking</strong> po prelekcjach. ;)</li>
             </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="content-column">
+            <h5>Najbliższe spotkanie:</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="content-column">
+            <p>Pierwsze spotkanie odbędzie się już
+                <strong itemprop="startDate" content="2014-04-16T18:30">16 kwietnia 2014 r.</strong>
+                o&nbsp;godzinie 18:30 w&nbsp;<strong>Kawiarni Hoża 51</strong>.</p>
+            <p>Więcej informacji na temat miejsca można znaleźć na
+                <a target="_blank" href="https://www.facebook.com/kawiarnia.hoza51">stronie kawiarni</a>.</p>
         </div>
     </div>
 
@@ -87,17 +109,17 @@
 
     <div class="row">
         <div class="social-button-column">
-            <a href="https://twitter.com/gamedevwarsaw" class="button">
+            <a target="_blank" href="https://twitter.com/gamedevwarsaw" class="button">
                 <i class="foundicon-twitter"></i>
             </a>
         </div>
         <div class="social-button-column">
-            <a href="https://www.facebook.com/gamedevwarsaw" class="button">
+            <a target="_blank" href="https://www.facebook.com/gamedevwarsaw" class="button">
                 <i class="foundicon-facebook"></i>
             </a>
         </div>
         <div class="social-button-column">
-            <a href="https://plus.google.com/u/0/b/103490240085652783023/103490240085652783023/posts" class="button">
+            <a target="_blank" href="https://plus.google.com/103490240085652783023" rel="publisher" class="button">
                 <i class="foundicon-google-plus"></i>
             </a>
         </div>
@@ -111,32 +133,18 @@
     </div>
 </footer>
 
-<!-- Google Analytics script -->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        };
-        i[r].l = new Date();
-        a = s.createElement(o);
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-48817736-1', 'gamedevwarsaw.pl');
-    ga('send', 'pageview');
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "js/deferred.js";
+        document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
 </script>
-<!---->
-
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/fastclick.js"></script>
-<script src="js/foundation/foundation.js"></script>
-<script>
-    $(document).foundation();
-</script>
-
 
 </body>
 </html>
