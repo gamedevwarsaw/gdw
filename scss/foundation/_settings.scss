@@ -37,7 +37,7 @@ $column-gutter: rem-calc(24);
 
 // We use these to control various global styles
 $body-bg: $gdw-orange;
-$body-font-color: #ffffff;
+$body-font-color: #fff;
 $body-font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $body-font-weight: 300;
 // $body-font-style: normal;
@@ -158,9 +158,9 @@ $h6-font-size: rem-calc(21);
 // $code-font-weight: bold;
 
 // We use these to style anchors
-// $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-text-decoration: underline;
+$anchor-font-color: $body-font-color;
+$anchor-font-color-hover: scale-color($body-font-color, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
