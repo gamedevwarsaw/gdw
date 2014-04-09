@@ -3,7 +3,7 @@
 //
 
 // This is the default html and body font-size for the base rem value.
-$rem-base: 21px;
+$rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-20px;bound() in your settings
 @import "functions";
@@ -16,7 +16,7 @@ $rem-base: 21px;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-$base-font-size: 21px;
+$base-font-size: 16px;
 
 // The $base-line-height is 100% while $base-font-size is 150%
 //$base-line-height: 150%;
@@ -39,7 +39,7 @@ $column-gutter: rem-calc(24);
 $body-bg: $gdw-orange;
 $body-font-color: #fff;
 $body-font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$body-font-weight: 300;
+$body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
@@ -114,7 +114,7 @@ $body-font-weight: 300;
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
-$header-font-weight: 300;
+$header-font-weight: $font-weight-light;
 // $header-font-style: normal;
 $header-font-color: $gdw-dark-orange;
 // $header-line-height: 1.4;
@@ -123,12 +123,12 @@ $header-font-color: $gdw-dark-orange;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(89);
-$h2-font-size: rem-calc(67);
-$h3-font-size: rem-calc(50);
-$h4-font-size: rem-calc(37);
-$h5-font-size: rem-calc(28);
-$h6-font-size: rem-calc(21);
+$h1-font-size: $font-size-6;
+$h2-font-size: $font-size-5;
+$h3-font-size: $font-size-4;
+$h4-font-size: $font-size-3;
+$h5-font-size: $font-size-2;
+$h6-font-size: $font-size-1;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
