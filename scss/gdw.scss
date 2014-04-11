@@ -112,6 +112,8 @@ section#content {
       @extend .radius;
       @extend .expand;
 
+      margin: 0;
+
       i {
         font-size: 2rem;
       }
@@ -147,6 +149,11 @@ section#content {
         }
       }
     }
+  }
+
+  .cooperators {
+    display: table;
+    margin: 0 auto;
   }
 
 }
