@@ -152,10 +152,12 @@ section#content {
   }
 
   .cooperators {
-    display: table;
-    margin: 0 auto;
+    li {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
-
 }
 
 footer {
