@@ -126,6 +126,15 @@ section#content {
 
     h4 {
       @extend .text-center;
+
+      .time {
+        font-size: $font-size-2;
+        font-weight: $font-weight-normal;
+
+        i {
+          font-size: $font-size-2*0.7;
+        }
+      }
     }
 
     .abstract {
